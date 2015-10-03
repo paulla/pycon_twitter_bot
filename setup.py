@@ -19,6 +19,7 @@ setup(name='bot',
       zip_safe=False,
       install_requires=[
           # -*- Extra requirements: -*-
+          "python-twitter",
       ],
       entry_points="""
       # -*- Entry points: -*-
