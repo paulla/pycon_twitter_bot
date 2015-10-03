@@ -11,6 +11,8 @@ def main():
         parser.add_argument('--conf',
                         help='conf file')
 
+        parser.add_argument('--status')
+
         args = parser.parse_args()
 
         config = ConfigParser.RawConfigParser()
@@ -21,3 +23,5 @@ def main():
                           access_token_key=config.get('twitter', 'access_token_key'),
                           access_token_secret=config.get('twitter', 'access_token_secret'))
         print api.VerifyCredentials()
+
+        status = api.PostUpdate(args.status)
