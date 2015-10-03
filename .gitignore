@@ -23,6 +23,8 @@ var/
 .installed.cfg
 *.egg
 bin/
+prod.ini
+
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
